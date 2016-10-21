@@ -1,0 +1,83 @@
+.container {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
+
+.heading h2 {
+  weight: 800;
+  display: inline-block;
+  padding: 30px 0px;
+  color: rgba(100, 100, 100, 0.7); }
+
+hr {
+  height: 0;
+  background: none;
+  border: 0;
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+  width: 40%; }
+
+.buttons a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 30px 0px;
+  padding: 1em 2em;
+  background: #3D9970;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .buttons a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7); }
+  .buttons a:active {
+    text-decoration: none; }
+.buttons .first-button:hover {
+  box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px #3D9970; }
+.buttons .second-button {
+  background: #001F3F;
+  color: white; }
+  .buttons .second-button:hover {
+    box-shadow: 0px 0px 0px 2px #001F3F inset, 0px 0px 0px 4px white inset; }
+.buttons .third-button {
+  background: #85144B;
+  position: relative;
+  top: 0px;
+  left: 0px; }
+  .buttons .third-button:hover {
+    box-shadow: 2px 2px 0px #fff, 4px 4px 0px #85144B;
+    top: -4px;
+    left: -4px; }
+.buttons .fourth-button {
+  background: #39CCCC;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  box-shadow: 5px 5px 0px #b3ebeb; }
+  .buttons .fourth-button:hover {
+    box-shadow: 5px 5px 0px #8ae1e1; }
+  .buttons .fourth-button:active {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0px 0px 0px #b3ebeb; }
+.buttons .fifth-button {
+  background: #FF4136;
+  border-radius: 0;
+  position: relative; }
+  .buttons .fifth-button:after, .buttons .fifth-button:before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    bottom: 2%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .buttons .fifth-button:before {
+    bottom: auto;
+    top: 2%; }
+  .buttons .fifth-button:hover:after, .buttons .fifth-button:hover:before {
+    left: 48%;
+    right: 48%; }
+
+/*# sourceMappingURL=main.css.map */

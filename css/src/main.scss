@@ -1,0 +1,121 @@
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$black:  #111;
+.container{
+	font-family:'Open Sans', sans-serif;
+	text-align:center;
+}
+
+.heading{
+	h2{
+		weight:800;
+		display:inline-block;
+		padding:30px 0px;
+		color:rgba(100,100,100,0.7);
+	}
+}
+hr{
+	height:0;
+	background:none;
+	border:0;
+	border-top:4px solid rgba(0,0,0,0.5) ;
+	width:40%;
+}
+.buttons{
+	a{
+		display:inline-block;
+		text-decoration:none;
+		margin:30px 0px;
+		padding:1em 2em;
+		background:$olive;
+		border-radius:4px;
+		color:rgba(255,255,255,0.7);
+		-webkit-transition: all 0.3s;
+		transition:all 0.3s;
+		&:hover{
+			text-decoration:none;
+			color:rgba(255,255,255,0.7);
+		}	
+		&:active{
+			text-decoration:none;
+		}
+	}
+	.first-button:hover{
+		box-shadow:0px 0px 0px 2px white,0px 0px 0px 4px $olive;
+	}
+	.second-button{
+		background:$navy;
+		color:white;
+		&:hover{
+			box-shadow:0px 0px 0px 2px $navy inset, 0px 0px 0px 4px white inset;
+		}
+	}
+	.third-button{
+		background:$maroon;
+		position:relative;
+		top:0px;
+		left:0px;
+		&:hover{
+			box-shadow:2px 2px 0px $white, 4px 4px 0px $maroon;
+			top:-4px;
+			left:-4px;
+		}
+	}
+	.fourth-button{
+		background:$teal;
+		position:relative;
+		top:0px;
+		left:0px;
+		box-shadow:5px 5px 0px lighten($teal,30%);
+		&:hover{
+			box-shadow:5px 5px 0px lighten($teal,20%);
+		}
+		&:active{
+			top:5px;
+			left:5px;
+			box-shadow:0px 0px 0px lighten($teal,30%);
+		}
+	}
+	.fifth-button{
+		background:$red;
+		border-radius:0;
+		position:relative;
+
+		&:after,&:before{
+			content:'';
+			display:block;
+			height:2px;
+			background:$white;
+			position:absolute;
+			left:2%;
+			right:2%;
+			bottom:2%;
+			-webkit-transition:all 0.3s;
+			transition:all 0.3s;
+		}
+		&:before{
+			bottom:auto;
+			top:2%;
+		}
+		&:hover:after,&:hover:before{
+			left:48%;
+			right:48%;
+		}
+	}
+}
